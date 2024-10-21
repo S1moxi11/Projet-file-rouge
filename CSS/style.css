@@ -1,0 +1,24 @@
+html {
+    background-color: black;
+}
+
+.yeseva-one-regular {
+    font-family: "Yeseva One", serif;
+    font-weight: 800;
+    color: white;
+    font-size: xx-large;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: grey;
+    font-size: x-small;
+}
+
+header {
+    color: white;
+    font-weight: 600;
+}
+

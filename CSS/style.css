@@ -1,132 +1,132 @@
 html {
-    background-color: #041821;
+    background-color: #041821; /* couleur de fond de la page */
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* suppression des marges par défaut du body */
+    padding: 0; /* suppression du padding par défaut du body */
 }
 
 p {
-    margin-left: 5%;
+    margin-left: 5%; /* marges à gauche pour les paragraphes */
 }
 
 header {
-    color: white;
-    font-weight: 600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #808080;
-    padding: 5px;
+    color: white; /* couleur du texte du header */
+    font-weight: 600; /* grosseur de la police */
+    display: flex; /* utilisation du flexbox */
+    justify-content: space-between; /* espacement entre les éléments */
+    align-items: center; /* alignement vertical des éléments */
+    border-bottom: 1px solid #808080; /* ligne grise */
+    padding: 10px; /* espacement de la ligne par rapport a l'en-tête */
 }
 
 .right-container {
-    justify-content: flex-end;
-    color: white;
-    margin: 5px;
-    font-size: 10px;
+    justify-content: flex-end; /* alignement à droite des icones */
+    color: white; /* couleur des icones */
+    margin: 5px; /* marges pour le right-container */
+    font-size: 10px; /* taille de la police */
 }
 
 .right-container li {
-    margin: 5px;
-    font-size: 10px;
+    margin: 5px; /* marges pour les éléments de la liste */
+    font-size: 10px; /* taille de la police pour les éléments de la liste */
 }
 
 .sous-titres {
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-bottom: 20px;
+    color: aliceblue; /* couleur du texte */
+    display: flex; /* flexbox pour aligner */
+    justify-content: center; /* centrer */
+    list-style-type: none; /* suppression des puces */
+    margin-bottom: 20px; /* espacement par rapport aux photos */
 }
 
 .sous-titres li {
-    margin: 5px;
-    font-size: 10px;
+    margin: 5px; /* marges pour les éléments de la liste de sous-titres (catégories de photos) */
+    font-size: 10px; /* taille de la police pour les sous-titres */
 }
 
 .yeseva-one-regular {
-    font-family: "Yeseva One", serif;
-    font-weight: 800;
-    color: white;
-    font-size: xx-large;
-    margin-left: 5%;
+    font-family: "Yeseva One", serif; /* police */
+    font-weight: 800; /* grosseur de la police */
+    color: white; /* couleur du texte */
+    font-size: xx-large; /* taille de la police */
+    margin-left: 5%; /* marges de gauche */
 }
 
 .montserrat {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-    color: #808080;
-    font-size: x-small;
+    font-family: "Montserrat", sans-serif; /* police */
+    font-weight: 100; /* poids de la police */
+    font-style: normal; /* style normal */
+    color: #808080; /* couleur du texte */
+    font-size: x-small; /* taille de la police */
 }
 
 main {
-    margin-top: 4%;
+    margin-top: 4%; /* espacement en haut pour le main */
 }
 
 .portrait {
-    background-color: #1bd79e;
+    background-color: #1bd79e; /* couleur de fond pour la catégorie portrait */
 }
 
 .photos {
-    display: grid;
-    grid-gap: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
+    display: grid; /* utilisation de grid pour les images */
+    grid-gap: 6px; /* espace entre les images */
+    margin-left: 5%; /* marges a gauche */
+    margin-right: 5%; /* marges a droite */
 }
 
 .photos img {
-    width: 100%;
+    width: 100%; /* images prennent toute la place qu'elles ont */
     height: 100%;
 }
 
 .point, .end-text {
-    color: #1bd79e;
+    color: #1bd79e; /* couleur splécial pour le point et le "créative et engagée" */
 }
 
 footer {
-    text-align: center;
-    color: #808080;
-    font-size: 7px;
-    margin-top: 35px;
+    text-align: center; /* centrer le texte du footer */
+    color: #808080; /* couleur du texte du footer */
+    font-size: 7px; /* taille de la police du footer */
+    margin-top: 35px; /* espacement en haut pour le footer */
 }
 
-@media (max-width: 480px) {
+/* résolution téléphones */
+@media (max-width: 640px) {
     .photos {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes de photos */
+        grid-gap: 8px; /* espace entre les images */    
     }
     .photos img:nth-child(n + 10) {
-        display: none;
+        display: none; /* ne pas afficher d'image après la 9ème */
     }
     header {
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
+        justify-content: center; /* centrer les éléments du header */
+        text-align: center; /* centrer le texte */
+        flex-direction: column; /* alignement vertical */
     }
     .right-container {
-        justify-content: center;
-        text-align: center;
-        margin: 0;
-        padding: 0; 
+        justify-content: center; /* centrer les icônes */
+        text-align: center; /* centrer le texte */
+        margin: 0; /* suppression des marges */
+        padding: 0; /* suppression du padding */
     }
 }
 
-@media (max-width: 768px) {
+/* résolution tablettes */
+@media (min-width: 641px) and (max-width: 1024px) {
     .photos {
-        grid-template-columns: repeat(5, 1fr);
-    }
-    .photos img:nth-child(n + 16) {
-        display: none;
+        grid-template-columns: repeat(5, 1fr); /* 5 colonnes de photos */
+        grid-gap: 8px; /* espace entre les images */
+
     }
 }
 
-@media (max-width: 1024px) {
+/* résolution ordinateurs */
+@media (min-width: 1025px) {
     .photos {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .photos img:nth-child(n + 10) {
-        display: none;
+        grid-template-columns: repeat(4, 1fr); /* 4 colonnes de photos */
     }
 }

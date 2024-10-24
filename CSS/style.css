@@ -67,8 +67,11 @@ main {
 }
 
 .portrait {
-    background-color: #1bd79e; /* couleur de fond pour la catégorie portrait */
+    background-color: #1bd79e; /*couleur pour la catégorie portrait */
+    padding: 2px 8px; /* ajouter de la taille au fond de la categorie portrait */
 }
+
+
 
 .photos {
     display: grid; /* utilisation de grid pour les images */
